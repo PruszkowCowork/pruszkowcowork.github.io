@@ -1,0 +1,44 @@
+.photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #CCCCCC;
+  margin: 25px auto;
+  border-radius: 50%;
+  background-image: url("../images/person_placeholder.png");
+  background-size: 102%;
+// styling for parallax
+  opacity: 0;
+  transform: translateX(-20px);
+  -webkit-transition: all 0.3s ease-in-out; // Safari
+  transition: all 0.3s ease-in-out;
+  &.is-visible {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*
+picture: person_placeholder.png
+source: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/240px-Blank_woman_placeholder.svg.png
+license: public domain
+license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.svg#filelinks
+author: Jaqen
+*/
+
+
+.bio {
+  margin-bottom: 25px;
+  h5 {
+    text-align: center;
+  }
+  p {
+    padding: 0 15px;
+    text-align: justify;
+  }
+}
+
+.social-linkedin {
+  text-align: right;
+  color: $mainGrey;
+  padding: 0 15px;
+}

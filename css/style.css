@@ -1,0 +1,343 @@
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: #FF5722;
+  border-color: #FF5722;
+}
+
+.button.button-primary:hover, .button.button-primary:focus,
+button.button-primary:hover,
+button.button-primary:focus,
+input[type="submit"].button-primary:hover,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:hover,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:hover,
+input[type="button"].button-primary:focus {
+  background-color: #ff4409;
+  border-color: #ff4409;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #FF5722;
+}
+
+a {
+  color: #FF5722;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4409;
+}
+
+section {
+  padding: 25px 0;
+}
+
+@media (min-width: 750px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+.twelve.columns h3 {
+  color: #A2A2A2;
+  text-align: center;
+}
+
+.main-color {
+  color: #FF5722;
+}
+
+.background-box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/cowork_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  overflow: hidden;
+}
+
+/*
+picture: cowork_bg.jpg
+source: https://www.flickr.com/photos/thehub/12913907324
+license: creative commons
+license link: https://creativecommons.org/licenses/by-sa/2.0/
+original picture was blured
+*/
+@media (min-width: 750px) {
+  .back-image {
+    width: 100%;
+    height: 40%;
+    background-size: contain;
+    background-image: url("../images/back_silhouette.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 48%;
+    left: 3%;
+  }
+}
+
+/*
+back_silhouette.png & fore_silhouette.png are sliced from
+original picture: http://www.publicdomainpictures.net/view-image.php?image=147188&picture=business-people
+license: Public Domain
+author: Piotr Siedlecki
+*/
+.logo {
+  height: 25%;
+  width: 100%;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 34%;
+}
+
+@media (min-width: 750px) {
+  .fore-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/fore_silhouette.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    position: absolute;
+    top: 54%;
+  }
+}
+
+.navigation {
+  padding-top: 30px;
+}
+
+.nav-logo {
+  float: left;
+  color: #FF5722;
+  font-weight: 700;
+  border: 2px solid #FF5722;
+  padding: 18px 35px;
+  border-radius: 10px;
+}
+
+.nav {
+  float: right;
+}
+
+.nav ul {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: #A2A2A2;
+  font-weight: 500;
+}
+
+.nav li:hover {
+  color: #FF5722;
+  font-weight: 600;
+}
+
+.intro p {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #CCCCCC;
+  margin: 25px auto;
+  border-radius: 50%;
+  background-image: url("../images/person_placeholder.png");
+  background-size: 102%;
+  opacity: 0;
+  transform: translateX(-20px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.photo-placeholder.is-visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/*
+picture: person_placeholder.png
+source: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/240px-Blank_woman_placeholder.svg.png
+license: public domain
+license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.svg#filelinks
+author: Jaqen
+*/
+.bio {
+  margin-bottom: 25px;
+}
+
+.bio h5 {
+  text-align: center;
+}
+
+.bio p {
+  padding: 0 15px;
+  text-align: justify;
+}
+
+.social-linkedin {
+  text-align: right;
+  color: #A2A2A2;
+  padding: 0 15px;
+}
+
+.map p {
+  text-align: justify;
+}
+
+#base-map {
+  width: 100%;
+  background-image: url("../images/cowork_plan/base.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 72%;
+  position: relative;
+}
+
+#base-map li {
+  list-style-type: none;
+}
+
+#room1 {
+  width: 16%;
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  z-index: 5;
+}
+
+#room2 {
+  width: 11%;
+  position: absolute;
+  top: 3%;
+  left: 29%;
+  z-index: 5;
+}
+
+#room3 {
+  width: 11%;
+  position: absolute;
+  top: 4%;
+  left: 43.5%;
+  z-index: 5;
+}
+
+#room4 {
+  width: 11%;
+  position: absolute;
+  top: 3%;
+  left: 59.5%;
+  z-index: 5;
+}
+
+#room5 {
+  width: 17%;
+  position: absolute;
+  top: 41%;
+  left: 68.5%;
+  z-index: 5;
+}
+
+#room6 {
+  width: 18%;
+  position: absolute;
+  top: 73%;
+  left: 79.2%;
+  z-index: 5;
+}
+
+#room7 {
+  width: 18%;
+  position: absolute;
+  top: 75%;
+  left: 52.2%;
+  z-index: 5;
+}
+
+#room8 {
+  width: 20%;
+  position: absolute;
+  top: 74%;
+  left: 3.8%;
+  z-index: 5;
+}
+
+#room1-info {
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  background: #FF5722;
+  background: rgba(255, 87, 34, 0.95);
+  display: block;
+  z-index: 10;
+  position: absolute;
+  padding: 10px;
+  display: none;
+}
+
+#room1-info:after {
+  content: "";
+  position: absolute;
+  border-bottom: 50px solid #FF5722;
+  border-bottom: 50px solid rgba(255, 87, 34, 0.95);
+  border-bottom-color: #FF5722;
+  border-bottom-color: rgba(255, 87, 34, 0.95);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+#room1-info {
+  top: 25%;
+  left: 10%;
+  font-size: 1.5rem;
+}
+
+#room1-info:after {
+  top: -50px;
+  left: 80px;
+}
+
+.contact {
+  text-align: right;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #A2A2A2;
+}
+
+small a {
+  color: #A2A2A2;
+}

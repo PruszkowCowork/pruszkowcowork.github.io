@@ -1,0 +1,17 @@
+section {
+  padding: 25px 0;
+  @media (min-width: 750px) {
+    padding: 50px 0;
+  }
+}
+
+.twelve.columns {
+  h3 {
+    color: $mainGrey;
+    text-align: center;
+  }
+}
+
+.main-color {
+  color: $mainColor;
+}

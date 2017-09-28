@@ -1,0 +1,36 @@
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: $mainColor;
+  border-color: $mainColor;
+
+  &:hover,
+  &:focus {
+    background-color: $mainColorDarker;
+    border-color: $mainColorDarker;
+  }
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  &:focus {
+    border: 1px solid $mainColor;
+  }
+}
+
+a {
+  color: $mainColor;
+  text-decoration: none;
+ &:hover {
+   color: $mainColorDarker;
+ }
+}
