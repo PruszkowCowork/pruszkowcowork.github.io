@@ -4,13 +4,18 @@
   border: 1px solid #CCCCCC;
   margin: 25px auto;
   border-radius: 50%;
-  background-image: url("../images/person_placeholder.png");
   background-size: 102%;
 // styling for parallax
   opacity: 0;
   transform: translateX(-20px);
   -webkit-transition: all 0.3s ease-in-out; // Safari
   transition: all 0.3s ease-in-out;
+  &.ceo {
+    background-image: url("../images/natalia-image.jpg");
+  }
+  &.cto {
+    background-image: url("../images/grzegorz-image.jpeg");
+  }
   &.is-visible {
     opacity: 1;
     transform: translateX(0px);
