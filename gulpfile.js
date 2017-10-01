@@ -4,7 +4,7 @@ var sass = require("gulp-sass");
 var browserSync = require('browser-sync').create();
 
 gulp.task("jshint", function() {
-  return gulp.src("../cowork_full_website/js/*.js")
+  return gulp.src("../pruszkowcowork.github.io/js/*.js")
     .pipe(jshint())
     .pipe(jshint.reporter("default"))
 });
@@ -14,22 +14,22 @@ gulp.task("jshint", function() {
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "../cowork_full_website"
+        server: "../pruszkowcowork.github.io"
     });
 
-    gulp.watch("../cowork_full_website/scss/**/*.scss", ['sass']);
-    gulp.watch("../cowork_full_website/*.html").on('change', browserSync.reload);
-    gulp.watch("../cowork_full_website/js/app.js").on('change', browserSync.reload);    
+    gulp.watch("../pruszkowcowork.github.io/scss/**/*.scss", ['sass']);
+    gulp.watch("../pruszkowcowork.github.io/*.html").on('change', browserSync.reload);
+    gulp.watch("../pruszkowcowork.github.io/js/app.js").on('change', browserSync.reload);    
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("../cowork_full_website/scss/style.scss")
+    return gulp.src("../pruszkowcowork.github.io/scss/style.scss")
         .pipe(sass({
           errLogToConsole: true,
           outputStyle: "expanded"
         }))
-        .pipe(gulp.dest("../cowork_full_website/css"))
+        .pipe(gulp.dest("../pruszkowcowork.github.io/css"))
         .pipe(browserSync.stream());
 });
 
